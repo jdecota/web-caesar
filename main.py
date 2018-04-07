@@ -27,7 +27,7 @@ form = """
     </head>
     <body>
       <!-- create your form here -->
-      <form action="/action_page.php" method="POST"style="width: auto; overflow: hidden;">
+      <form action="/" method="POST"style="width: auto; overflow: hidden;">
             <label>
                 Rotate by:
                 <input type="text" name="rot" value="0" />
@@ -39,7 +39,7 @@ form = """
     </body>
 </html>
 """
-@app.route("/action_page.php", methods=["POST"])
+@app.route("/", methods=["POST"])
 def encrypt():
     lrot = int(request.form["rot"])
     ltext = request.form["text"]
