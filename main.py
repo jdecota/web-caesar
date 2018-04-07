@@ -56,7 +56,7 @@ def index():
         error_element = ''
 
     # build the response string
-    content = form.format({0})
+    content = form.format('')
 
     return content
 
